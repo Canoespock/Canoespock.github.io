@@ -29,7 +29,7 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.jpg" alt="Canoespock" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Canoespock"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-14T07:35:48.653Z" title="2023/1/14 15:35:48">2023-01-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-14T08:23:10.921Z" title="2023/1/14 16:23:10">2023-01-14</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">a minute read (About 142 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/14/Graph%20Neural%20Networks%20-%20A%20Review%20of%20Methods%20and%20Applications/">Graph Neural Networks - A Review of Methods and Applications</a></h1><div class="content"><h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>Graph neural networks are neural models that capture the dependence of graphs via message passing between the nodes of graphs.</p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.jpg" alt="Canoespock" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Canoespock"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-14T07:35:48.653Z" title="2023/1/14 15:35:48">2023-01-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-14T10:13:09.561Z" title="2023/1/14 18:13:09">2023-01-14</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">a minute read (About 196 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/14/Graph%20Neural%20Networks%20-%20A%20Review%20of%20Methods%20and%20Applications/">Graph Neural Networks - A Review of Methods and Applications</a></h1><div class="content"><h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>Graph neural networks are neural models that capture the dependence of graphs via message passing between the nodes of graphs.</p>
 <ul>
 <li><p>propose a general design pipeline for GNN models </p>
 </li>
@@ -41,24 +41,58 @@
 </li>
 </ul>
 <h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>Graphs can be used across various areas</p>
-<h5 id="social-networks"><a href="#social-networks" class="headerlink" title="social networks"></a>social networks</h5><blockquote>
-<p><a href="">Graph Convolutional Networks with Markov Random Field Reasoning for Social Spammer Detection</a></p>
+<ul>
+<li><p>social networks</p>
+<blockquote>
+<p><a href="">Graph Convolutional Networks with Markov Random Field Reasoning for Social Spammer Detection, 2020</a></p>
 </blockquote>
-<h5 id="natural-science"><a href="#natural-science" class="headerlink" title="natural science"></a>natural science</h5><blockquote>
-<p><a href="">Graph Networks as Learnable Physics Engines for Inference and Control</a></p>
-<p><a href="">Interaction Networks for Learning about Objects, Relations and Physics</a></p>
+</li>
+<li><p>natural science</p>
+<blockquote>
+<p><a href="">Graph Networks as Learnable Physics Engines for Inference and Control, 2018</a></p>
 </blockquote>
-<h5 id="protein-protein-interaction-networks"><a href="#protein-protein-interaction-networks" class="headerlink" title="protein-protein interaction networks"></a>protein-protein interaction networks</h5><blockquote>
-<p><a href="">Protein Interface Prediction using Graph Convolutional Networks
+</li>
+</ul>
+<blockquote>
+<p><a href="">Interaction Networks for Learning about Objects, Relations and Physics, 2016</a></p>
+</blockquote>
+<ul>
+<li><p>protein-protein interaction networks</p>
+<blockquote>
+<p><a href="">Protein Interface Prediction using Graph Convolutional Networks, 2017
 </a></p>
 </blockquote>
-<h5 id="knowledge-graphs"><a href="#knowledge-graphs" class="headerlink" title="knowledge graphs"></a>knowledge graphs</h5><blockquote>
-<p><a href="">Knowledge Transfer for Out-of-Knowledge-Base Entities: A Graph Neural Network Approach
+</li>
+<li><p>knowledge graphs</p>
+<blockquote>
+<p><a href="">Knowledge Transfer for Out-of-Knowledge-Base Entities: A Graph Neural Network Approach, 2017
 </a></p>
 </blockquote>
-<h5 id="other-research-areas"><a href="#other-research-areas" class="headerlink" title="other research areas"></a>other research areas</h5><blockquote>
-<p><a href="">Learning Combinatorial Optimization Algorithms over Graphs
+</li>
+<li><p>other research areas</p>
+<blockquote>
+<p><a href="">Learning Combinatorial Optimization Algorithms over Graphs, 2017
 </a></p>
+</blockquote>
+</li>
+</ul>
+<h5 id="The-fundamental-motivations-of-graph-neural-networks"><a href="#The-fundamental-motivations-of-graph-neural-networks" class="headerlink" title="The fundamental motivations of graph neural networks"></a>The fundamental motivations of graph neural networks</h5><ul>
+<li><p>Recursive Neural Networks are first utilized on directed acyclic graphs</p>
+<blockquote>
+<p><a href="">Supervised neural networks for the classification of structures,1997
+</a><br><a href="">A general framework for adaptive processing of data structures, 1998
+</a></p>
+</blockquote>
+</li>
+<li><p>Recurent Neural Networks and Feedforward Neural Networks</p>
+<blockquote>
+<p><a href="">The Graph Neural Network Model, 2009
+</a><br><a href="">Neural Network for Graphs: A Contextual Constructive Approach, 2009
+</a></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
 <p>Reference Paper<br><a target="_blank" rel="noopener" href="https://arxiv.org/ftp/arxiv/papers/1812/1812.08434.pdf">Graph Neural Networks: A Review of Methods and Applications</a></p>
 </blockquote>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-14T07:04:39.286Z" title="2023/1/14 15:04:39">2023-01-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-14T09:05:09.375Z" title="2023/1/14 17:05:09">2023-01-14</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">a minute read (About 170 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/14/GNN%20Paper/">GNN Paper</a></h1><div class="content"><h4 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h4><ul>
