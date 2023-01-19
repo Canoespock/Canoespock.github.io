@@ -29,7 +29,7 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.jpg" alt="Canoespock" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Canoespock"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T08:04:22.080Z" title="2023/1/19 16:04:22">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-19T08:07:16.794Z" title="2023/1/19 16:07:16">2023-01-19</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">a minute read (About 221 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Basics%20of%20Math%20and%20Graph/">Basics of Math and Graph</a></h1><div class="content"><h4 id="Linear-Algebra"><a href="#Linear-Algebra" class="headerlink" title="Linear Algebra"></a>Linear Algebra</h4><ul>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.jpg" alt="Canoespock" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Canoespock"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T08:04:22.080Z" title="2023/1/19 16:04:22">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-19T08:34:39.132Z" title="2023/1/19 16:34:39">2023-01-19</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">2 minutes read (About 335 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Basics%20of%20Math%20and%20Graph/">Basics of Math and Graph</a></h1><div class="content"><h4 id="Linear-Algebra"><a href="#Linear-Algebra" class="headerlink" title="Linear Algebra"></a>Linear Algebra</h4><ul>
 <li>Scalar</li>
 <li><p>Vector</p>
 <script type="math/tex; mode=display">
@@ -57,9 +57,9 @@
 </ul>
 <script type="math/tex; mode=display">
 \mathbf D_p(\mathbf x_1,\mathbf  x_2)=\Vert\mathbf x_1-\mathbf x_2\Vert_p</script><ul>
-<li>A set of vectors <script type="math/tex">\mathbf x_1,\mathbf x_2,cdots,\mathbf x_m</script> are linearly independent</li>
+<li>A set of vectors <script type="math/tex">\mathbf x_1,\mathbf x_2,\cdots,\mathbf x_m</script> are linearly independent</li>
 </ul>
-<p>not exist a set of scalars <script type="math/tex">\lambda_1,\lambda_2,cdots,\lambda_m,</script> which are not all 0 </p>
+<p>not exist a set of scalars <script type="math/tex">\lambda_1,\lambda_2,\cdots,\lambda_m,</script> which are not all 0 </p>
 <script type="math/tex; mode=display">
 \lambda_1\mathbf x_1+\lambda_2\mathbf x_2+\cdots+\lambda_m\mathbf x_m=0</script><ul>
 <li><p>Matrix</p>
@@ -76,6 +76,26 @@ a_{m1}&a_{m2}&\cdots&a_{mn}
 \mathbf B\in\mathbb R^{n\times p}</script><script type="math/tex; mode=display">
 \mathbf C_{ij}=\sum_{k=1}^{n}\mathbf A_{ik}\mathbf B_{kj}</script><script type="math/tex; mode=display">
 \mathbf C\in\mathbb R^{m\times p}</script></li>
+<li><p>determinant</p>
+<script type="math/tex; mode=display">
+det(\mathbf A)=\sum_{k_1k_2\cdots k_n}(-1)^{\tau(k_1k_2\cdots k_n)}
+a_{1k_1}a_{2k_2}\cdots a_{nk_n}</script><script type="math/tex; mode=display">
+k_1k_2\cdots k_n\ is\ a\ permutation\ of\ 1,2,\cdots,n</script><script type="math/tex; mode=display">
+\tau(k_1k_2\cdots k_n)\ is\ the\ inversion\ number\ of\ the\ permutationk_1k_2\cdots k_n</script></li>
+<li><p>The inverse matrix</p>
+<script type="math/tex; mode=display">
+\mathbf A^{-1}\mathbf A=\mathbf I</script></li>
+<li><p>The transpose of matrix</p>
+<script type="math/tex; mode=display">
+\mathbf A_{ij}^{T}=\mathbf A_{ji}</script></li>
+<li><p>The Hadamard product</p>
+<script type="math/tex; mode=display">
+\mathbf A\in\mathbb R^{m\times n}</script><script type="math/tex; mode=display">
+\mathbf B\in\mathbb R^{m\times n}</script><script type="math/tex; mode=display">
+\mathbf C_{ij}=\mathbf A_{ij}\mathbf B_{ij}</script><script type="math/tex; mode=display">
+\mathbf C\in\mathbb R^{m\times n}</script></li>
+<li><p>Tensor: An array with arbitrary dimension</p>
+</li>
 </ul>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T04:38:10.065Z" title="2023/1/19 12:38:10">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-19T04:43:33.858Z" title="2023/1/19 12:43:33">2023-01-19</time></span><span class="level-item"><a class="link-muted" href="/categories/ELECTRODYNAMICS/">ELECTRODYNAMICS</a></span><span class="level-item">a minute read (About 164 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Maxwell%E2%80%99s%20Equations/">Maxwell&#039;s Equations</a></h1><div class="content"><h5 id="The-interaction-energy-E-of-a-system-of-such-charges-in-empty-space-a-vacuum"><a href="#The-interaction-energy-E-of-a-system-of-such-charges-in-empty-space-a-vacuum" class="headerlink" title="The interaction energy, E, of a system of such charges in empty space, a vacuum"></a>The interaction energy, E, of a system of such charges in empty space, a vacuum</h5><script type="math/tex; mode=display">
 E=\frac{1}{2}\sum_{\substack{a,b\\ a\neq b}}\frac{e_ae_b}{r_{ab}}=\frac{1}{2}\sum_a e_a\phi_a</script><h5 id="The-energy-changes"><a href="#The-energy-changes" class="headerlink" title="The energy changes"></a>The energy changes</h5><script type="math/tex; mode=display">
