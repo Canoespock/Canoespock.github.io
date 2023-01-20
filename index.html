@@ -32,7 +32,7 @@
   </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.jpg" alt="Canoespock" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Canoespock"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T09:18:49.914Z" title="2023/1/19 17:18:49">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-19T09:18:52.233Z" title="2023/1/19 17:18:52">2023-01-19</time></span><span class="level-item">a few seconds read (About 11 words)</span></div></div><div class="content"><blockquote>
 <p><a target="_blank" rel="noopener" href="https://ai.stanford.edu/~jkrause/cars/car_dataset.html">Cars Dataset</a> </p>
 </blockquote>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T08:04:22.080Z" title="2023/1/19 16:04:22">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-20T07:42:06.896Z" title="2023/1/20 15:42:06">2023-01-20</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">5 minutes read (About 748 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Basics%20of%20Math%20and%20Graph/">Basics of Math and Graph</a></h1><div class="content"><h4 id="Linear-Algebra"><a href="#Linear-Algebra" class="headerlink" title="Linear Algebra"></a>Linear Algebra</h4><ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T08:04:22.080Z" title="2023/1/19 16:04:22">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-20T08:03:44.135Z" title="2023/1/20 16:03:44">2023-01-20</time></span><span class="level-item"><a class="link-muted" href="/categories/CV/">CV</a></span><span class="level-item">6 minutes read (About 855 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Basics%20of%20Math%20and%20Graph/">Basics of Math and Graph</a></h1><div class="content"><h4 id="Linear-Algebra"><a href="#Linear-Algebra" class="headerlink" title="Linear Algebra"></a>Linear Algebra</h4><ul>
 <li>Scalar</li>
 <li><p>Vector</p>
 <script type="math/tex; mode=display">
@@ -191,12 +191,36 @@ L_{ij}^{sym}=\left\{
 &0\ otherwise.
 \end{aligned}
 \right.</script><ul>
-<li>Random walk normalized Laplacian</li>
-</ul>
-<ul>
+<li>Random walk normalized Laplacian<script type="math/tex; mode=display">
+L^{rw}=D^{-1}L=I-D^{-1}A</script><script type="math/tex; mode=display">
+L_{ij}^{rw}=
+\left\{
+\begin{aligned}
+&1\ if\ i=j\ and\ d(v_i)\ \neq\ 0,\\
+&-\frac{1}{d(v_i)}\ if\left\{v_i,v_j\right\}\in E\ and\ i\ \neq\ j,\\
+&0\ otherwise.
+\end{aligned}
+\right.</script></li>
 <li>Incidence matrix</li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T04:38:10.065Z" title="2023/1/19 12:38:10">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-19T04:43:33.858Z" title="2023/1/19 12:43:33">2023-01-19</time></span><span class="level-item"><a class="link-muted" href="/categories/ELECTRODYNAMICS/">ELECTRODYNAMICS</a></span><span class="level-item">a minute read (About 164 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Maxwell%E2%80%99s%20Equations/">Maxwell&#039;s Equations</a></h1><div class="content"><h5 id="The-interaction-energy-E-of-a-system-of-such-charges-in-empty-space-a-vacuum"><a href="#The-interaction-energy-E-of-a-system-of-such-charges-in-empty-space-a-vacuum" class="headerlink" title="The interaction energy, E, of a system of such charges in empty space, a vacuum"></a>The interaction energy, E, of a system of such charges in empty space, a vacuum</h5><script type="math/tex; mode=display">
+<p>For a directed graph</p>
+<script type="math/tex; mode=display">
+M_{ij}=
+\left\{
+\begin{aligned}
+&1\ if\ \exists\ k\ s.t\ e_j=\left\{v_i,v_k\right\},\\
+&-1\ if\ \exists\ k\ s.t\ e_j=\left\{v_k,v_i\right\},\\
+&0\ otherwise.
+\end{aligned}
+\right.</script><p>For a undirected graph</p>
+<script type="math/tex; mode=display">
+M_{ij}=
+\left\{
+\begin{aligned}
+&1\ if\ \exists\ k\ s.t\ e_j=\left\{v_i,v_k\right\},\\
+&0\ otherwise.
+\end{aligned}
+\right.</script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-19T04:38:10.065Z" title="2023/1/19 12:38:10">2023-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-19T04:43:33.858Z" title="2023/1/19 12:43:33">2023-01-19</time></span><span class="level-item"><a class="link-muted" href="/categories/ELECTRODYNAMICS/">ELECTRODYNAMICS</a></span><span class="level-item">a minute read (About 164 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/19/Maxwell%E2%80%99s%20Equations/">Maxwell&#039;s Equations</a></h1><div class="content"><h5 id="The-interaction-energy-E-of-a-system-of-such-charges-in-empty-space-a-vacuum"><a href="#The-interaction-energy-E-of-a-system-of-such-charges-in-empty-space-a-vacuum" class="headerlink" title="The interaction energy, E, of a system of such charges in empty space, a vacuum"></a>The interaction energy, E, of a system of such charges in empty space, a vacuum</h5><script type="math/tex; mode=display">
 E=\frac{1}{2}\sum_{\substack{a,b\\ a\neq b}}\frac{e_ae_b}{r_{ab}}=\frac{1}{2}\sum_a e_a\phi_a</script><h5 id="The-energy-changes"><a href="#The-energy-changes" class="headerlink" title="The energy changes"></a>The energy changes</h5><script type="math/tex; mode=display">
 \delta E=(\nabla_a E)\cdot\delta\mathbf r_a=-\mathbf F_a\cdot\delta\mathbf r_a</script><h5 id="The-force-on-the-ath-particle"><a href="#The-force-on-the-ath-particle" class="headerlink" title="The force on the ath particle"></a>The force on the ath particle</h5><script type="math/tex; mode=display">
 \mathbf F_a=-\nabla_a\sum_{b\neq a}\frac{e_ae_b}{r_{ab}}=-\nabla_ae_a\phi(\mathbf r_a)</script><ul>
