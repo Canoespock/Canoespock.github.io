@@ -240,7 +240,7 @@ M_{ij}=
 &1\ if\ \exists\ k\ s.t\ e_j=\left\{v_i,v_k\right\},\\
 &0\ otherwise.
 \end{aligned}
-\right.</script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-14T07:35:48.653Z" title="2023/1/14 15:35:48">2023-01-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-23T08:17:26.283Z" title="2023/1/23 16:17:26">2023-01-23</time></span><span class="level-item"><a class="link-muted" href="/categories/COMPUTER-VISION/">COMPUTER VISION</a></span><span class="level-item">4 minutes read (About 673 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/14/Graph%20Neural%20Networks%20-%20A%20Review%20of%20Methods%20and%20Applications/">Graph Neural Networks - A Review of Methods and Applications</a></h1><div class="content"><h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>Graph neural networks are neural models that capture the dependence of graphs via message passing between the nodes of graphs.</p>
+\right.</script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-14T07:35:48.653Z" title="2023/1/14 15:35:48">2023-01-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-25T04:05:43.321Z" title="2023/1/25 12:05:43">2023-01-25</time></span><span class="level-item"><a class="link-muted" href="/categories/COMPUTER-VISION/">COMPUTER VISION</a></span><span class="level-item">6 minutes read (About 926 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/14/Graph%20Neural%20Networks%20-%20A%20Review%20of%20Methods%20and%20Applications/">Graph Neural Networks - A Review of Methods and Applications</a></h1><div class="content"><h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>Graph neural networks are neural models that capture the dependence of graphs via message passing between the nodes of graphs.</p>
 <ul>
 <li><p>propose a general design pipeline for GNN models </p>
 </li>
@@ -402,6 +402,51 @@ M_{ij}=
 </blockquote>
 <h5 id="Build-model-using-computational-modules"><a href="#Build-model-using-computational-modules" class="headerlink" title="Build model using computational modules"></a>Build model using computational modules</h5><blockquote>
 <p>Propagation Module<br>Sampling Module<br>Pooling Module</p>
+</blockquote>
+<p><img src="\image\pipeline.jpg" alt="The general design pipeline for a GNN"></p>
+<p>NDCN(<a href="">Neural Dynamics on Complex Networks</a>) combines ordinary differential equation systems (ODEs) and GNNs.</p>
+<h4 id="Instantiations-of-computational-modules"><a href="#Instantiations-of-computational-modules" class="headerlink" title="Instantiations of computational modules"></a>Instantiations of computational modules</h4><p><img src="\image\computational module" alt="An overview of computational modules"></p>
+<h5 id="Propagation-modules-convolution-operator"><a href="#Propagation-modules-convolution-operator" class="headerlink" title="Propagation modules - convolution operator"></a>Propagation modules - convolution operator</h5><p><a href="">The emerging field of signal processing on graphs: Extending high-dimensional data analysis to networks and other irregular domains
+</a></p>
+<ul>
+<li>Spectral approaches<script type="math/tex; mode=display">
+\mathscr F(\mathbf x)=\mathbf U^T\mathbf x</script><script type="math/tex; mode=display">
+\mathscr F^{-1}(\mathbf x)=\mathbf U\mathbf x</script></li>
+</ul>
+<blockquote>
+<p>the normalized graph Laplacian</p>
+<script type="math/tex; mode=display">
+\mathbf L=\mathbf I_N-\mathbf D^{-\frac{1}{2}}\mathbf A\mathbf D^{-\frac{1}{2}}</script></blockquote>
+<script type="math/tex; mode=display">
+\mathbf D\ is\ the\ degree\ matrix</script><script type="math/tex; mode=display">
+\mathbf A is\ the\ adjacency\ matrix\ of\ the\ graph</script><p><a href="">A wavelet tour of signal processing</a></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\mathbf g\star\mathbf x&=\mathscr F^{-1}(\mathscr F(\mathbf g)\odot\mathscr F(\mathbf x)\\
+&=\mathbf U(\mathbf U^T\mathbf g\odot\mathbf U^T\mathbf x)
+\end{aligned}</script><script type="math/tex; mode=display">
+\mathbf U^T\mathbf g\ is\ the\ filter\ in\ the\ spectral\ domain</script><script type="math/tex; mode=display">
+\mathbf g\star\mathbf x=\mathbf U\mathbf g_w\mathbf U^T\mathbf x</script><blockquote>
+<p>several typical spectral methods which design different filters <script type="math/tex">\mathbf g_w</script></p>
+</blockquote>
+<p>Spectral Network</p>
+<p><a href="">Spectral Networks and Locally Connected Networks on Graphs</a></p>
+<p><a href="">Deep Convolutional Networks on Graph-Structured Data</a></p>
+<p>ChebNet </p>
+<p><a href="">Wavelets on Graphs via Spectral Graph Theory</a></p>
+<p><a href="">Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering</a></p>
+<p><a href="">Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering</a></p>
+<p>GCN</p>
+<ul>
+<li>Basic spatial approaches</li>
+</ul>
+<ul>
+<li>Attention-based spatial approaches</li>
+</ul>
+<ul>
+<li>General frameworks for spatial approaches</li>
+</ul>
+<h5 id="Propagation-modules-recurrent-operator"><a href="#Propagation-modules-recurrent-operator" class="headerlink" title="Propagation modules - recurrent operator"></a>Propagation modules - recurrent operator</h5><h5 id="Propagation-modules-skip-connection"><a href="#Propagation-modules-skip-connection" class="headerlink" title="Propagation modules - skip connection"></a>Propagation modules - skip connection</h5><blockquote>
 <p>Reference Paper<br><a target="_blank" rel="noopener" href="https://arxiv.org/ftp/arxiv/papers/1812/1812.08434.pdf">Graph Neural Networks: A Review of Methods and Applications, 2018</a></p>
 </blockquote>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-01-14T07:04:39.286Z" title="2023/1/14 15:04:39">2023-01-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-01-23T08:17:41.102Z" title="2023/1/23 16:17:41">2023-01-23</time></span><span class="level-item"><a class="link-muted" href="/categories/COMPUTER-VISION/">COMPUTER VISION</a></span><span class="level-item">2 minutes read (About 358 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/01/14/GNN%20Paper/">GNN Paper</a></h1><div class="content"><h4 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h4><ul>
